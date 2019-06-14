@@ -1,0 +1,110 @@
+a{
+	color: white;
+	text-decoration: none;
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #474e5d;
+}
+.timeline:after{
+	content: '';
+	background-color: white;
+	position: absolute;
+	left: 50%;
+	width: 6px;
+	top:0;
+	bottom:0;
+}
+.timeline{
+	position: relative;
+	max-width: 1200px;
+	margin:0px auto;
+}
+.container{
+	position: relative;
+	width: 50%;
+	padding: 10px 40px;
+}
+
+.triangle{
+	position: absolute;	
+	left: 42.9%;
+	border: 30px solid white;
+	border-width:50px 50px 50px 50px;
+	border-color:transparent transparent transparent white;
+}
+.content{
+	background-color: white;
+	padding: 10px 40px;
+	border-radius: 6px;
+}
+.container:after{
+	position: absolute;
+	content: '';
+	top:43%;
+	right:-18px;
+	border: 4px solid orange;
+	z-index: 1;
+	background-color: white;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}
+.left{
+	left:0%;
+}
+.right{
+	left:50%;
+}
+.right:after{
+	right: 97%;
+}
+.left:before{
+	content: '';
+	width: 0;
+	height:0;
+	position: absolute;
+	border: solid white;
+	border-width:10px 10px 10px 10px;
+	border-color: transparent transparent transparent white;
+	right: 3.3%;
+	top:43%;
+}
+.right:before{
+	content: '';
+	width: 0;
+	height:0;
+	position: absolute;
+	border: solid white;
+	border-width:10px 10px 10px 10px;
+	border-color: transparent white transparent transparent;
+	left: 3.4%;
+	top:43%;
+}
+.line{
+	border-bottom: 3px solid #00BFFF;
+	font-family: Calibri;
+	font-size: 20px;
+	padding: 10px;
+	font-weight: bold;
+	font-style:italic;
+}
+.square{
+	float: right;
+	margin-right:10px;
+	padding: 10px 10px 10px 20px;
+}
+.square li{
+	list-style-type: square;
+}
+.fixed{
+	bottom: 0px;
+	right:0px;
+	position: fixed;
+	padding: 10px 20px;
+	border: 3px solid #4169E1;
+	background-color:#082567;
+	color: white;
+}
